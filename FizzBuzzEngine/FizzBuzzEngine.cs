@@ -1,8 +1,8 @@
 ﻿namespace FizzBuzzEngine
 {
-    public static class FizzBuzzEngine
+    public  class FizzBuzzEngine
     {
-        public static string Calculate(int number)
+        public  string Calculate(int number)
         {
 
             if (IsNumberDivisibleBy(number, 15)) // Always perform this check first! As if true other conditions will also return true

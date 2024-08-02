@@ -14,9 +14,10 @@ namespace FizzBuzz.Tests
         {
             //Arrange
             string expectedResult = number.ToString();
-           
+            FizzBuzzEngine.FizzBuzzEngine fizzBuzzEngine = new FizzBuzzEngine.FizzBuzzEngine();
+
             //Act
-            string result = FizzBuzzEngine.FizzBuzzEngine.Calculate(number);
+            string result = fizzBuzzEngine.Calculate(number);
 
             //Assert
             Assert.Equal(result, expectedResult);
@@ -30,10 +31,11 @@ namespace FizzBuzz.Tests
         public void ANumberDivisibleBy3_ReturnsFizz(int number)
         {
             //Arrange
-            string expectedResult = ConstantsFizzBuzz.Fizz;           
+            string expectedResult = ConstantsFizzBuzz.Fizz;
+            FizzBuzzEngine.FizzBuzzEngine fizzBuzzEngine = new FizzBuzzEngine.FizzBuzzEngine();
 
             //Act
-            string result = FizzBuzzEngine.FizzBuzzEngine.Calculate(number);
+            string result = fizzBuzzEngine.Calculate(number);
 
             //Assert
             Assert.Equal(result, expectedResult);
@@ -47,9 +49,10 @@ namespace FizzBuzz.Tests
         {
             //Arrange
             string expectedResult = ConstantsFizzBuzz.Buzz;
-         
+            FizzBuzzEngine.FizzBuzzEngine fizzBuzzEngine = new FizzBuzzEngine.FizzBuzzEngine();
+
             //Act
-            string result = FizzBuzzEngine.FizzBuzzEngine.Calculate(number);
+            string result = fizzBuzzEngine.Calculate(number);
 
             //Assert
             Assert.Equal(result, expectedResult);
@@ -64,9 +67,10 @@ namespace FizzBuzz.Tests
         {
             //Arrange
             string expectedResult = ConstantsFizzBuzz.Fizzbuzz;
-         
+            FizzBuzzEngine.FizzBuzzEngine fizzBuzzEngine = new FizzBuzzEngine.FizzBuzzEngine();
+
             //Act
-            string result = FizzBuzzEngine.FizzBuzzEngine.Calculate(number);
+            string result = fizzBuzzEngine.Calculate(number);
 
             //Assert
             Assert.Equal(result, expectedResult);
