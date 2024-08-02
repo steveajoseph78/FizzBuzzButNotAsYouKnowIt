@@ -2,11 +2,9 @@
 {
     public static class FizzBuzzEngine
     {
-
         const string Fizz = "Fizz";
         const string Buzz = "Buzz";
         const string Fizzbuzz = "Fizzbuzz";
-
 
         public static string Calculate(int number)
         {

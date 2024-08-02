@@ -1,5 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-using FizzBuzzEngine;
+﻿const int startNumber = 1;
+const int endNumber = 100;
 
-
-FizzBuzzEngine.FizzBuzzEngine.Calculate(1);
+for (int num = startNumber; num <= endNumber; num++)
+{
+    FizzBuzzEngine.FizzBuzzEngine.Calculate(num);
+}
