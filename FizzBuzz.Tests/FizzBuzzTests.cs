@@ -51,6 +51,22 @@ namespace FizzBuzz.Tests
         }
 
 
+        [Fact]
+        public void ANumberDivisibleBy5And3_ReturnsFizzbuzz()
+        {
+            //Arrange
+            string expectedResult = "Fizzbuzz";
+            int number = 15;
+
+            //Act
+            string result = FizzBuzzEngine.Calculate(number);
+
+
+            //Assert
+            Assert.Equal(result, expectedResult);
+        }
+
+
     }
 }
 
