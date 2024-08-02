@@ -12,7 +12,7 @@ namespace FizzBuzz.Tests
             int number = 1;
 
             //Act
-            string result = FizzBuzzEngine.Calculate(number);
+            string result = FizzBuzzEngine.FizzBuzzEngine.Calculate(number);
 
 
             //Assert
@@ -28,7 +28,7 @@ namespace FizzBuzz.Tests
             int number = 3;
 
             //Act
-            string result = FizzBuzzEngine.Calculate(number);
+            string result = FizzBuzzEngine.FizzBuzzEngine.Calculate(number);
 
 
             //Assert
@@ -43,7 +43,7 @@ namespace FizzBuzz.Tests
             int number = 5;
 
             //Act
-            string result = FizzBuzzEngine.Calculate(number);
+            string result = FizzBuzzEngine.FizzBuzzEngine.Calculate(number);
 
 
             //Assert
@@ -59,22 +59,13 @@ namespace FizzBuzz.Tests
             int number = 15;
 
             //Act
-            string result = FizzBuzzEngine.Calculate(number);
+            string result = FizzBuzzEngine.FizzBuzzEngine.Calculate(number);
 
 
             //Assert
             Assert.Equal(result, expectedResult);
         }
 
-
     }
 }
 
-
-public static class FizzBuzzEngine
-{
-    public static string Calculate(int number)
-    {
-        return "1";
-    } 
-}
