@@ -2,29 +2,25 @@
 {
     public static class FizzBuzzEngine
     {
-        const string Fizz = "Fizz";
-        const string Buzz = "Buzz";
-        const string Fizzbuzz = "Fizzbuzz";
-
         public static string Calculate(int number)
         {
 
-            if (IsNumberDivisibleBy(number, 15))
+            if (IsNumberDivisibleBy(number, 15)) // Always perform this check first! As if true other conditions will also return true
             {
-                Console.WriteLine(Fizzbuzz);
-                return Fizzbuzz;
+                Console.WriteLine(ConstantsFizzBuzz.Fizzbuzz);
+                return ConstantsFizzBuzz.Fizzbuzz;
             }
 
             if (IsNumberDivisibleBy(number, 3))
             {
-                Console.WriteLine(Fizz);
-                return Fizz;
+                Console.WriteLine(ConstantsFizzBuzz.Fizz);
+                return ConstantsFizzBuzz.Fizz;
             }
 
             if (IsNumberDivisibleBy(number, 5))
             {
-                Console.WriteLine(Buzz);
-                return Buzz;
+                Console.WriteLine(ConstantsFizzBuzz.Buzz);
+                return ConstantsFizzBuzz.Buzz;
             }
 
             Console.WriteLine(number);
@@ -43,7 +39,6 @@
             {
                 return false;
             }
-
         }
     }
 }
