@@ -18,6 +18,39 @@ namespace FizzBuzz.Tests
             //Assert
             Assert.Equal(result, expectedResult);
         }
+
+
+        [Fact]
+        public void ANumberDivisibleBy3_ReturnsFizz()
+        {
+            //Arrange
+            string expectedResult = "Fizz";
+            int number = 3;
+
+            //Act
+            string result = FizzBuzzEngine.Calculate(number);
+
+
+            //Assert
+            Assert.Equal(result, expectedResult);
+        }
+
+        [Fact]
+        public void ANumberDivisibleBy5_ReturnsBuzz()
+        {
+            //Arrange
+            string expectedResult = "Buzz";
+            int number = 5;
+
+            //Act
+            string result = FizzBuzzEngine.Calculate(number);
+
+
+            //Assert
+            Assert.Equal(result, expectedResult);
+        }
+
+
     }
 }
 
